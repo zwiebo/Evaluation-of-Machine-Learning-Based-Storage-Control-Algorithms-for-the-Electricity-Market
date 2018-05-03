@@ -159,6 +159,6 @@ if __name__ == "__main__":
         df = pd.concat([df, dummy_table], axis=1)
 
     # save the resulting df
-    #df.to_pickle("00_OPSD_DATA.pickle")
-    #df.to_excel("00_OPSD_DATA.xls")
+    df.to_pickle("00_OPSD_DATA.pickle")
+    df.to_excel("00_OPSD_DATA.xls")
     create_header_overview(df, "Info\\Headers_downsized.txt")
